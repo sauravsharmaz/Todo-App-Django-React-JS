@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header-container{
+  background-color: rgba(4, 15, 53, 0.808);
+  height: 125px;
+  width: 100%;
+}
+.header-container .header{
+  display: flex;
+  align-items: center; 
+  margin: 0 auto;
+  height: 100%;
+  width: 1200px;
+}
+.header-container .header .title{
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}

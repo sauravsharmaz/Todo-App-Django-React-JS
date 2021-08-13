@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rubik:wght@300;400&display=swap');
+
+.TaskList{ 
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    gap: 15px;
+    width: 1200px; 
+    margin: 50px auto; 
+    grid-template-columns: repeat(1,1fr);
+}
+.task-card{
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);    
+    height: 100px;
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.task-card:hover{
+    transform: scale(1.05);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.task-card .task-title{
+    font-family: 'Merriweather', serif;  
+    margin-left: 2%;
+    margin-right: 3%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+} 
+.task-card .btns{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.task-card .btns .delete{
+    background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%)
+}
+.task-card .btns .delete{
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.task-card .btns .delete:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.task-card .btns .Edit{
+    background-image: linear-gradient(to right, #289e0a 0%, #033613  51%, #ecf00d  100%)
+}
+.task-card .btns .Edit{
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+.task-card .btns .Edit:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
